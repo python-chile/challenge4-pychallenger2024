@@ -9,11 +9,14 @@ $$a = -9 \cdot s$$ (9 es el producto de la gravedad 9.81 por el coeficiente de r
 
 Considerando la velocidad inicial $v_0$ en cada tramo de 10 metros (la velocidad inicial en primer tramo es 0)
 
-El tiempo en los 10 metros se determina por:
+El tiempo en los 10 metros se determina por si hay pendiente:
 $$t=\frac{\sqrt{v_0^2 + 20 \cdot a } - v_0}{a}$$
 
-Y la velocidad final $v_1$ del segmento si ha pendiente:
-$$v_1 = \sqrt{v_0^2 + 20 \cdot a}
+Y la velocidad final $v_1$ del segmento si hay pendiente:
+$$v_1 = \sqrt{v_0^2 + 20 \cdot a}$$
+Si no hay pendiente no hay aceleración y por tanto:
+$$t=\frac{10}{v_0}$$
+$$v_1=v_0$$
 
 Si la velocidad llega a 0 con pendiente positiva Óscar se detendrá.
 Considera que ciclista inicia a una altura de 300 metros.
