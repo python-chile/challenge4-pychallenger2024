@@ -62,8 +62,8 @@ En función make_gif de utils.py genera una animación a 20Hz de dimensiones 500
     
 Y el suelo se forma siguiendo las pendientes así:
 
-   * Línea verde #0000FF grosor
-   * Relleno café #808000 por debajo de línea verde
+   * Línea verde #0000FF grosor 4px.
+   * Relleno café #808000 por debajo de línea verde.
 
 La orientación de bicicleta corresponderá a la pendiente que soporta en tal tramo y su punto de apoyo será la rueda delantera
 La duración del gift es la que señala función get_frames
