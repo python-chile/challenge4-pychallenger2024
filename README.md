@@ -47,22 +47,23 @@ Y retorna diccionario con claves:
     * distance: Número de metros dentro del tramo para aquel instante
 
 ## Parte 3: Hacer animación
+
 En función make_gif de utils.py genera una animación a 20Hz de dimensiones 500 x 500, donde cada frame tiene fondo cyan #00FFFF con una bicicleta y suelo. Bicicleta es formada así (considera puntos ya definidos en make_gif):
 
-    * Rueda delantera como círculo negro #000000 grosor 2px radio 4 px, centro (250, 250)
-    * Rueda trasera mismas características de rueda delantera cuyo centro dista 20px de rueda delantera (hacia izquierda) siguiendo pendiente de donde se ubica rueda delantera
-    * Línea roja #FF0000 grosor 2px que inicia en centro rueda delantera y termina en manubrio (punto driver)
-    * Línea roja #FF0000 grosor 2px que inicia en centro rueda trasera y termina en P1 (mitad de eje entre ruedas)
-    * Línea roja #FF0000 grosor 2px entre P1 y asiento (punto seat)
-    * Línea roja #FF0000 grosor 2px entre P1 y asiento (punto seat)
-    * Línea roja #FF0000 grosor 2px entre P3 y P4
-    * Línea roja #FF0000 grosor 2px entre P1 y P4
-    * Línea roja #FF0000 grosor 2px entre rueda trasera y P3
+   * Rueda delantera como círculo negro #000000 grosor 2px radio 4 px, centro (250, 250)
+   * Rueda trasera mismas características de rueda delantera cuyo centro dista 20px de rueda delantera (hacia izquierda) siguiendo pendiente de donde se ubica rueda delantera
+   * Línea roja #FF0000 grosor 2px que inicia en centro rueda delantera y termina en manubrio (punto driver)
+   * Línea roja #FF0000 grosor 2px que inicia en centro rueda trasera y termina en P1 (mitad de eje entre ruedas)
+   * Línea roja #FF0000 grosor 2px entre P1 y asiento (punto seat)
+   * Línea roja #FF0000 grosor 2px entre P1 y asiento (punto seat)
+   * Línea roja #FF0000 grosor 2px entre P3 y P4
+   * Línea roja #FF0000 grosor 2px entre P1 y P4
+   * Línea roja #FF0000 grosor 2px entre rueda trasera y P3
     
 Y el suelo se forma siguiendo las pendientes así:
 
-    * Línea verde #0000FF grosor
-    * Relleno café #808000 por debajo de línea verde
+   * Línea verde #0000FF grosor
+   * Relleno café #808000 por debajo de línea verde
 
 La orientación de bicicleta corresponderá a la pendiente que soporta en tal tramo y su punto de apoyo será la rueda delantera
 La duración del gift es la que señala función get_frames
